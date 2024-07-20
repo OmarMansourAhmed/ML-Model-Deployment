@@ -6,4 +6,4 @@
 
 
 ### UI:
-![Uploading Screenshot 2024-07-20 094934.png…]()
+![Screenshot 2024-07-20 094934](https://github.com/user-attachments/assets/bd23a32c-ef0a-42dd-b49f-7a99aff2d6da)
