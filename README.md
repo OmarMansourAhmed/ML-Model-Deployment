@@ -5,7 +5,5 @@
 4. Do A model Deployment Using Flask Frame Work and do A nice Interface
 
 
-
-
-   ### UI:
+### UI:
 ![Uploading Screenshot 2024-07-20 094934.png…]()
