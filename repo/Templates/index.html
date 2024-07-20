@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="login">
+    <h1>Booking Status Prediction</h1>
+    <form action="{{ url_for('predict') }}" method="post">
+      <input type="text" name="lead_time" placeholder="Lead time" required="required" />
+      <input type="text" name="average_price" placeholder="Average price" required="required" />
+      <input type="text" name="special_requests" placeholder="Special requests" required="required" />
+      <input type="text" name="Month" placeholder="Month" required="required" />
+      <input type="text" name="number_of_week_nights" placeholder="number_of_week_nights" required="required" />
+      <input type="text" name="number_of_weekend_nights" placeholder="number_of_weekend_nights" required="required" />
+      <input type="text" name="market_segment_type_Online" placeholder="market_segment_type_Online" required="required" />
+      <input type="text" name="number_of_adults" placeholder="number_of_adults" required="required" />
+      <input type="text" name="market_segment_type_Offline" placeholder="market_segment_type_Offline" required="required" />
+      <input type="text" name="type_of_meal_Not Selected" placeholder="type_of_meal_Not Selected" required="required" />
+      <input type="text" name="room_type_Room_Type 4" placeholder="room_type_Room_Type 4" required="required" />
+      <input type="text" name="type_of_meal_Meal Plan 2" placeholder="type_of_meal_Meal Plan 2" required="required" />
+      <button type="submit">Predict</button>
+    </form>
+    <br><br>
+    <div>{{ prediction_text1 }}</div>
+    <div>{{ prediction_text2 }}</div>
+    <div>{{ prediction_text3 }}</div>
+    <div>{{ prediction_text4 }}</div>
+  </div>
+  <div class="info">
+    <h3> Cellula Technologies Internship</h3>
+    <p> <b>- Machine Learning Model Deployment Using Flask framework and UI using HTML / CSS</b></p>
+    <h4> By: Omar Mansour Ahmed</h4>
+  </div>
+</body>
+</html>
